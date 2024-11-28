@@ -33,10 +33,6 @@ def label_smiles(line, max_smi_len):
         X[i] = CHAR_SMI_SET[ch]
     return X
 
-
-
-
-
 class MyDataset(Dataset):
     def __init__(self, data_path, phase,max_seq_len,max_smi_len):
         super(MyDataset, self).__init__()
